@@ -27,8 +27,14 @@
     .timeline{border-left:2px solid #c6ddd7;margin-left:10px;padding-left:20px}.timeItem{position:relative;margin-bottom:16px}.timeItem:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--sand);left:-26px;top:5px;border:2px solid #fff;box-shadow:0 0 0 1px var(--sea)}.timeItem b{font-size:13px;color:var(--sea)}.timeItem strong{display:block;margin-top:2px}.timeItem p{margin:2px 0 0;color:var(--muted);font-size:13px}
     .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.info{border:1px solid var(--line);border-radius:14px;padding:14px}.info span{display:block;font-size:12px;color:var(--muted)}.info b{display:block;margin-top:3px}.list{margin:0;padding-left:20px;color:#42585c}.list li{margin:8px 0}.caution{margin-top:15px;padding:13px 15px;border-radius:13px;background:#fff2d9;color:#795116;font-size:13px}
     .alts{max-width:1460px;margin:-17px auto 45px;padding:0 28px 0 438px}.alts h3{margin:0 0 10px;color:var(--deep)}.altgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.alt{background:#fff;border:1px solid var(--line);border-radius:17px;padding:16px;display:flex;justify-content:space-between;gap:12px;align-items:center}.alt small{display:block;color:var(--sea);font-weight:800}.alt b{display:block;font-size:17px}.alt p{font-size:12px;margin:3px 0 0;color:var(--muted)}.alt button{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;font-weight:750;color:var(--deep);white-space:nowrap}.altphoto{width:58px;height:58px;border-radius:12px;background:#0d3b3e center/cover;flex-shrink:0}.prototype{max-width:1460px;margin:0 auto 35px;padding:0 28px;font-size:12px;color:var(--muted);text-align:center}
-    @media(max-width:980px){.hero{grid-template-columns:1fr}.matcher{position:static}.alts{padding:0 28px;margin-top:-16px}.quick{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){header{padding:0 16px}.verify{display:none}.hero{padding:14px 12px 34px}.matcher{padding:20px;border-radius:18px}.matcher h1{font-size:29px}.result{border-radius:18px}.photo{height:245px}.photoText{left:18px;right:18px}.photoText h2{font-size:31px}.score{right:13px;top:13px}.resultBody{padding:18px}.quick{grid-template-columns:1fr 1fr}.cards,.altgrid{grid-template-columns:1fr}.alts{padding:0 12px}.alt{align-items:flex-start}.prototype{padding:0 18px}.tripBar{padding:0 12px}}
+    .guidegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .guidecard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 19px;text-decoration:none;color:var(--ink);display:block;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+    .guidecard:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(9,58,58,.12);border-color:var(--sea)}
+    .guidecard .gc-region{display:block;font-size:11px;font-weight:800;color:var(--sea);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+    .guidecard .gc-name{display:block;font-size:17px;font-weight:800;color:var(--deep);letter-spacing:-.02em;margin-bottom:4px}
+    .guidecard p{margin:0;font-size:13px;color:var(--muted);line-height:1.4}
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.matcher{position:static}.alts{padding:0 28px;margin-top:-16px}.quick{grid-template-columns:repeat(2,1fr)}.guidegrid{grid-template-columns:1fr 1fr}}
+    @media(max-width:620px){header{padding:0 16px}.verify{display:none}.hero{padding:14px 12px 34px}.matcher{padding:20px;border-radius:18px}.matcher h1{font-size:29px}.result{border-radius:18px}.photo{height:245px}.photoText{left:18px;right:18px}.photoText h2{font-size:31px}.score{right:13px;top:13px}.resultBody{padding:18px}.quick{grid-template-columns:1fr 1fr}.cards,.altgrid{grid-template-columns:1fr}.alts{padding:0 12px}.alt{align-items:flex-start}.prototype{padding:0 18px}.tripBar{padding:0 12px}.guidegrid{grid-template-columns:1fr}}
     .tripBar{max-width:1460px;margin:18px auto 0;padding:0 28px}
     .tripSummary{background:var(--deep);color:#fff;border-radius:16px;padding:14px 20px;font-size:13px;margin-bottom:10px;line-height:1.5}
     .tripSummary b{color:var(--sand)}
@@ -82,11 +88,23 @@
     <section style="max-width:1404px;margin:0 auto 38px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:24px">
       <div class="eyebrow">Explore Goa beaches</div><h2>Plan with a detailed beach guide</h2>
       <p>Read practical guides for activities, food, crowd levels, typical costs and who each beach suits.</p>
-      <div class="altgrid">
-        <a class="alt" href="/goa/beaches/palolem/">Palolem Beach — kayaking and scenery</a><a class="alt" href="/goa/beaches/candolim/">Candolim Beach — facilities and water sports</a>
-        <a class="alt" href="/goa/beaches/baga/">Baga Beach — lively atmosphere</a><a class="alt" href="/goa/beaches/agonda/">Agonda Beach — quiet and scenic</a>
-        <a class="alt" href="/goa/beaches/morjim/">Morjim Beach — open sand and surf</a><a class="alt" href="/goa/beaches/colva/">Colva Beach — family-friendly convenience</a>
-      </div><p><a href="/goa/beaches/">See all Goa beach guides →</a></p>
+      <div class="guidegrid">
+        <a class="guidecard" href="/goa/beaches/calangute/"><span class="gc-region">North Goa</span><span class="gc-name">Calangute Beach</span><p>Full facilities, activities and food in one place.</p></a>
+        <a class="guidecard" href="/goa/beaches/baga/"><span class="gc-region">North Goa</span><span class="gc-name">Baga Beach</span><p>Lively atmosphere, activities and nightlife.</p></a>
+        <a class="guidecard" href="/goa/beaches/candolim/"><span class="gc-region">North Goa</span><span class="gc-name">Candolim Beach</span><p>Facilities, dining and seasonal water sports.</p></a>
+        <a class="guidecard" href="/goa/beaches/anjuna/"><span class="gc-region">North Goa</span><span class="gc-name">Anjuna Beach</span><p>Cliffside cafés, the flea market and backpacker energy.</p></a>
+        <a class="guidecard" href="/goa/beaches/vagator/"><span class="gc-region">North Goa</span><span class="gc-name">Vagator Beach</span><p>Red cliffs, a fort view and a top sunset point.</p></a>
+        <a class="guidecard" href="/goa/beaches/arambol/"><span class="gc-region">North Goa</span><span class="gc-name">Arambol Beach</span><p>Backpacker favourite, famous for its drum circle.</p></a>
+        <a class="guidecard" href="/goa/beaches/mandrem/"><span class="gc-region">North Goa</span><span class="gc-name">Mandrem Beach</span><p>Quiet, boutique and yoga-friendly.</p></a>
+        <a class="guidecard" href="/goa/beaches/morjim/"><span class="gc-region">North Goa</span><span class="gc-name">Morjim Beach</span><p>Open sand, cafés and seasonal beginner surf.</p></a>
+        <a class="guidecard" href="/goa/beaches/palolem/"><span class="gc-region">South Goa</span><span class="gc-name">Palolem Beach</span><p>Scenic bay, kayaking and relaxed dining.</p></a>
+        <a class="guidecard" href="/goa/beaches/agonda/"><span class="gc-region">South Goa</span><span class="gc-name">Agonda Beach</span><p>Quiet scenery and an unhurried beach day.</p></a>
+        <a class="guidecard" href="/goa/beaches/colva/"><span class="gc-region">South Goa</span><span class="gc-name">Colva Beach</span><p>Convenient facilities for mixed-age groups.</p></a>
+        <a class="guidecard" href="/goa/beaches/benaulim/"><span class="gc-region">South Goa</span><span class="gc-name">Benaulim Beach</span><p>Fishing-village calm and dolphin-watching trips.</p></a>
+        <a class="guidecard" href="/goa/beaches/varca/"><span class="gc-region">South Goa</span><span class="gc-name">Varca Beach</span><p>Long, uncrowded sand backed by resorts.</p></a>
+        <a class="guidecard" href="/goa/beaches/patnem/"><span class="gc-region">South Goa</span><span class="gc-name">Patnem Beach</span><p>Boutique and quiet, right next to Palolem.</p></a>
+        <a class="guidecard" href="/goa/beaches/mobor/"><span class="gc-region">South Goa</span><span class="gc-name">Mobor Beach</span><p>River meets sea — Goa's water-sports hub.</p></a>
+      </div><p style="margin-top:16px"><a href="/goa/beaches/">See all Goa beach guides →</a></p>
     </section>
     <div class="prototype">Weather is live. Photos are sourced from Wikimedia Commons and are being reviewed for licensing before wider release — everything else (crowd levels, pricing, timings) remains an illustrative prototype estimate pending local verification.</div>
   </div>
